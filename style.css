@@ -291,7 +291,11 @@ h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
   height: 44px; border-radius: 10px; cursor: pointer;
 }
 .gcal-btn:hover { background: var(--surface); }
-.gcal-btn .g { font-weight: 800; font-size: 16px; color: var(--accent); }
+.gcal-logo { width: 20px; height: 20px; flex-shrink: 0; display: block; }
+.sidebar-gcal .gcal-logo { width: 22px; height: 22px; }
+.sidebar-gcal .status-text { flex: 1; }
+.gcal-connected-label { display: flex; align-items: center; gap: 8px; }
+.gcal-connected-label .live { margin: 0 0 0 2px; }
 .link-btn { border: none; background: none; color: var(--text-2); font-size: 13px; cursor: pointer; text-decoration: underline; }
 
 .day-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; }

@@ -247,7 +247,8 @@
     if (token) {
       statusEl.className = "gcal-status connected";
       const label = document.createElement("span");
-      label.innerHTML = '<i class="live"></i>Google Agenda connecté';
+      label.className = "gcal-connected-label";
+      label.innerHTML = '<img src="google-calendar.png" alt="" class="gcal-logo" width="20" height="20">Google Agenda connecté<i class="live"></i>';
       const btn = document.createElement("button");
       btn.className = "link-btn";
       btn.textContent = "Déconnecter";
@@ -257,7 +258,7 @@
       statusEl.className = "gcal-status";
       const btn = document.createElement("button");
       btn.className = "gcal-btn";
-      btn.innerHTML = '<span class="g">G</span>Connecter Google Agenda';
+      btn.innerHTML = '<img src="google-calendar.png" alt="" class="gcal-logo" width="20" height="20">Connecter Google Agenda';
       btn.addEventListener("click", connect);
       const gear = document.createElement("button");
       gear.className = "icon-btn";
